@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.row {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+ul {
+  list-style: none;
+}
+.footer {
+  background-color: #ececec;
+  padding: 7px 0;
+  width: 100%;
+  height: 100%;
+}
+.footer-col {
+  width: 327px;
+  padding: 0 15px;
+}
+.footer-col h4 {
+  font-size: 18px;
+  color: #132039;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #608540;
+  height: 2px;
+  box-sizing: border-box;
+  width: 150px;
+}
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer-col ul li a {
+  font-size: 20px;
+  text-transform: capitalize;
+  color: #a1a939;
+  text-decoration: none;
+  font-weight: 400;
+  color: #a1a939;
+  display: block;
+  margin-left: -10px;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover {
+  color: #e9f545;
+  padding-left: 8px;
+}
+.footer-col .social-links a {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  margin-left: 20px;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links ion-icon {
+  width: 35px;
+  height: 35px;
+}
+.footer-col .social-links ion-icon:hover {
+  color: #e9f545;
+}
+
+.footer-col ion-icon {
+  color: #a1a939;
+  width: 25px;
+  height: 25px;
+  margin-left: -37px;
+}
+
+/*responsive*/
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
+}
